@@ -1,7 +1,9 @@
 interface NavLinkProps {
   href: string;
   children: React.ReactNode;
+  // Controls the visual style: default text link, ghost secondary link, outlined CTA, or menu link
   variant?: 'default' | 'ghost' | 'outlined' | 'menu';
+
 }
 
 export default function NavLink({ href, children, variant = 'default' }: NavLinkProps) {
