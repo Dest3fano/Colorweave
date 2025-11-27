@@ -1,66 +1,60 @@
 export default function Logo() {
   return (
     <div className="flex items-center gap-3">
-      <svg
-        width="40"
-        height="40"
-        viewBox="0 0 40 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="shrink-0"
-      >
-        <rect width="40" height="40" rx="8" fill="url(#gradient1)" />
-        <path
-          d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20C28 24.4183 24.4183 28 20 28C15.5817 28 12 24.4183 12 20Z"
-          fill="url(#gradient2)"
-          fillOpacity="0.3"
-        />
-        <path
-          d="M16 20C16 17.7909 17.7909 16 20 16C22.2091 16 24 17.7909 24 20C24 22.2091 22.2091 24 20 24C17.7909 24 16 22.2091 16 20Z"
-          fill="white"
-          fillOpacity="0.9"
-        />
-        <path
-          d="M18 20C18 18.8954 18.8954 18 20 18C21.1046 18 22 18.8954 22 20C22 21.1046 21.1046 22 20 22C18.8954 22 18 21.1046 18 20Z"
-          fill="url(#gradient3)"
-        />
-        <defs>
-          <linearGradient
-            id="gradient1"
-            x1="0"
-            y1="0"
-            x2="40"
-            y2="40"
-            gradientUnits="userSpaceOnUse"
+      <div className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-700 via-indigo-500 to-blue-500 p-[1px] shadow-lg shadow-purple-900/30">
+        <div className="flex h-full w-full items-center justify-center rounded-[1rem] bg-[#0a0a0f]">
+          <svg
+            viewBox="0 0 64 64"
+            className="h-10 w-10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <stop stopColor="#8b5cf6" />
-            <stop offset="1" stopColor="#3b82f6" />
-          </linearGradient>
-          <linearGradient
-            id="gradient2"
-            x1="12"
-            y1="12"
-            x2="28"
-            y2="28"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopColor="#3b82f6" />
-            <stop offset="1" stopColor="#8b5cf6" />
-          </linearGradient>
-          <linearGradient
-            id="gradient3"
-            x1="18"
-            y1="18"
-            x2="22"
-            y2="22"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopColor="#8b5cf6" />
-            <stop offset="1" stopColor="#7c3aed" />
-          </linearGradient>
-        </defs>
-      </svg>
-      <span className="text-2xl font-bold text-gradient">Colorweave</span>
+            <path
+              d="M12 32C12 20.9543 20.9543 12 32 12C35.9887 12 39.7194 13.1658 42.8883 15.2702C46.0572 17.3746 48.5178 20.3277 49.9611 23.7935"
+              stroke="url(#stroke1)"
+              strokeWidth="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M52 32C52 43.0457 43.0457 52 32 52C28.0113 52 24.2806 50.8342 21.1117 48.7298C17.9428 46.6254 15.4822 43.6723 14.0389 40.2065"
+              stroke="url(#stroke2)"
+              strokeWidth="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M20 32C20 36.4183 23.5817 40 28 40C30.1217 40 32.067 39.1763 33.5355 37.7078C35.004 36.2393 35.8277 34.294 35.8277 32.1723C35.8277 30.0506 35.004 28.1053 33.5355 26.6368C32.067 25.1683 30.1217 24.3446 28 24.3446"
+              stroke="url(#stroke3)"
+              strokeWidth="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <defs>
+              <linearGradient id="stroke1" x1="12" y1="12" x2="52" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#8b5cf6" />
+                <stop offset="1" stopColor="#3b82f6" />
+              </linearGradient>
+              <linearGradient id="stroke2" x1="12" y1="52" x2="52" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#3b82f6" />
+                <stop offset="1" stopColor="#a855f7" />
+              </linearGradient>
+              <linearGradient id="stroke3" x1="20" y1="24" x2="36" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#c084fc" />
+                <stop offset="1" stopColor="#60a5fa" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div className="flex flex-col leading-tight">
+        <span className="text-xl font-semibold text-gradient tracking-wide drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
+          Colorweave
+        </span>
+        <span className="mt-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.4em] text-white/85 drop-shadow-[0_2px_6px_rgba(0,0,0,0.65)]">
+          ai studio
+        </span>
+      </div>
     </div>
   );
 }
